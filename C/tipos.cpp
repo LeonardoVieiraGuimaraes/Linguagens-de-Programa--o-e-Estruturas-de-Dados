@@ -46,6 +46,7 @@ int main()
     
     int resultado = a + b; // resultado será 13
     printf("Soma: %d\n", resultado);
+
     resultado = a - b;     // resultado será 7
     printf("Subtração: %d\n", resultado);
     resultado = a * b;     // resultado será 30
