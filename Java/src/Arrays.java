@@ -5,5 +5,11 @@ public class Arrays {
 
         System.out.println("Primeiro número: " + numeros[0]);
         System.out.println("Tamanho do array de nomes: " + nomes.length);
+
+        System.out.println("Elementos do array:");
+
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print(numeros[i] + " ");
+        }
     }
 }
