@@ -1,3 +1,4 @@
+package T01;
 class Node {
     char data;
     Node next;

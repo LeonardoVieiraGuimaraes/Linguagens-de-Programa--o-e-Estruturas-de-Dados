@@ -1,3 +1,4 @@
+package T01;
 // 2 Desenvolva um programa que crie um objeto de lista encadeada de 10 caracteres e depois crie um segundo objeto de lista que contém uma cópia da primeira lista, mas na ordem inversa, e exiba os dados ao usuário
 
 

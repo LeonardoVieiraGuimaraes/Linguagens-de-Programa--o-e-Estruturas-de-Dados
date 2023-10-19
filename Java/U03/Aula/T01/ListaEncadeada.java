@@ -1,3 +1,4 @@
+package T01;
 // 1 Desenvolva um programa que possibilite a inserção de 25 valores do tipo inteiro aleatórios de 0 a 100 em ordem em um objeto de lista encadeada. Ao final o programa deverá calcular a soma dos elementos e a média em ponto flutuante dos elementos.
 
 

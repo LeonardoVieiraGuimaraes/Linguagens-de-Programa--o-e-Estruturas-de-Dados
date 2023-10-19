@@ -1,6 +1,7 @@
+package T02;
 // 2 Desenvolva uma função que possibilite a cópia dos dados de um vetor para uma lista duplamente encadeada.
 
-
+import Node;
 
 class Node {
     int data;

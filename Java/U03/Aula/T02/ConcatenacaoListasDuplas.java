@@ -1,4 +1,6 @@
+package T02;
 // 1 Desenvolva uma função que possibilite a concatenação de duas listas duplamente encadeadas.
+
 class Node {
     int data;
     Node next;
