@@ -1,25 +1,29 @@
 package T03;
 import java.util.Stack;
-import java.util.Scanner;
 
 public class InverterPalavrasComPilha {
     public static void main(String[] args) {
-        Stack<String> stack = new Stack<>();
+        String inputLine = "Esta é uma frase de exemplo";
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite uma linha de texto: ");
-        String inputLine = scanner.nextLine();
-        scanner.close();
+        Stack<Character> letterStack = new Stack<>();
+        StringBuilder reversedPhrase = new StringBuilder();
 
-        String[] words = inputLine.split(" ");
-
-        for (int i = 0; i < words.length; i++) {
-            stack.push(words[i]);
+        for (char c : inputLine.toCharArray()) {
+            if (c != ' ') {
+                letterStack.push(c);
+            } else {
+                while (!letterStack.isEmpty()) {
+                    reversedPhrase.append(letterStack.pop());
+                }
+                reversedPhrase.append(' ');
+            }
         }
 
-        System.out.println("Palavras na ordem inversa:");
-        while (!stack.isEmpty()) {
-            System.out.print(stack.pop() + " ");
+        // Certifique-se de lidar com a última palavra se não houver espaço após ela
+        while (!letterStack.isEmpty()) {
+            reversedPhrase.append(letterStack.pop());
         }
+
+        System.out.println("Frase com palavras invertidas: " + reversedPhrase.toString());
     }
 }
