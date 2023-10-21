@@ -1,8 +1,6 @@
 package T02;
 // 2 Desenvolva uma função que possibilite a cópia dos dados de um vetor para uma lista duplamente encadeada.
 
-import Node;
-
 class Node {
     int data;
     Node next;
@@ -16,16 +14,6 @@ class Node {
 }
 
 public class CopiaVetorParaListaDupla {
-
-    public static void main(String[] args) {
-        int[] vetor = {1, 2, 3, 4, 5};
-
-        // Cria uma lista duplamente encadeada a partir do vetor
-        Node listaDupla = copyArrayToDoublyLinkedList(vetor);
-
-        // Exibe a lista duplamente encadeada
-        displayDoublyLinkedList(listaDupla);
-    }
 
     // Função para copiar dados de um vetor para uma lista duplamente encadeada
     public static Node copyArrayToDoublyLinkedList(int[] array) {
@@ -54,5 +42,15 @@ public class CopiaVetorParaListaDupla {
             current = current.next;
         }
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int[] vetor = { 1, 2, 3, 4, 5 };
+
+        // Cria uma lista duplamente encadeada a partir do vetor
+        Node listaDupla = copyArrayToDoublyLinkedList(vetor);
+
+        // Exibe a lista duplamente encadeada
+        displayDoublyLinkedList(listaDupla);
     }
 }

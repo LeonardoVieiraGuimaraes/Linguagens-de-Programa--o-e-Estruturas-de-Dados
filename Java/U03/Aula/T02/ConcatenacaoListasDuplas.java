@@ -15,21 +15,6 @@ class Node {
 
 public class ConcatenacaoListasDuplas {
 
-    public static void main(String[] args) {
-        int[] array1 = {1, 2, 3};
-        int[] array2 = {4, 5, 6};
-
-        // Converte os arrays em listas duplamente encadeadas
-        Node lista1 = createDoublyLinkedList(array1);
-        Node lista2 = createDoublyLinkedList(array2);
-
-        // Concatena as duas listas
-        Node result = concatenateDoublyLinkedLists(lista1, lista2);
-
-        // Exibe a lista resultante
-        displayDoublyLinkedList(result);
-    }
-
     // Função para criar uma lista duplamente encadeada a partir de um array
     public static Node createDoublyLinkedList(int[] array) {
         Node head = new Node(array[0]);
@@ -74,4 +59,21 @@ public class ConcatenacaoListasDuplas {
         }
         System.out.println();
     }
+
+    
+    public static void main(String[] args) {
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {4, 5, 6};
+
+        // Converte os arrays em listas duplamente encadeadas
+        Node lista1 = createDoublyLinkedList(array1);
+        Node lista2 = createDoublyLinkedList(array2);
+
+        // Concatena as duas listas
+        Node result = concatenateDoublyLinkedLists(lista1, lista2);
+
+        // Exibe a lista resultante
+        displayDoublyLinkedList(result);
+    }
+
 }

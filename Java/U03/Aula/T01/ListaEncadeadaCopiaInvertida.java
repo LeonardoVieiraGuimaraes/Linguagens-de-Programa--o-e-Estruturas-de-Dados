@@ -11,6 +11,7 @@ public class ListaEncadeadaCopiaInvertida {
         LinkedList<Character> primeiraLista = new LinkedList<>();
 
         // Adicionar 10 caracteres à primeira lista
+    
         primeiraLista.add('A');
         primeiraLista.add('B');
         primeiraLista.add('C');
@@ -21,6 +22,7 @@ public class ListaEncadeadaCopiaInvertida {
         primeiraLista.add('H');
         primeiraLista.add('I');
         primeiraLista.add('J');
+        primeiraLista.add('K');
 
         // Criar a segunda lista encadeada como uma cópia inversa da primeira
         LinkedList<Character> segundaLista = new LinkedList<>(primeiraLista);

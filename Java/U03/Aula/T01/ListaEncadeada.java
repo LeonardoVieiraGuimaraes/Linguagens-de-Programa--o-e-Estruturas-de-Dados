@@ -13,10 +13,12 @@ public class ListaEncadeada {
 
         // Criar um objeto Random para gerar números aleatórios
         Random random = new Random();
+        System.out.println(random);
 
         // Inserir 25 valores inteiros aleatórios na lista
         for (int i = 0; i < 25; i++) {
             int valor = random.nextInt(101); // Gera números aleatórios de 0 a 100
+            System.out.println(valor);
             listaEncadeada.add(valor);
         }
 
